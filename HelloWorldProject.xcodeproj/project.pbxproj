@@ -13,9 +13,7 @@
 		48F781EB2AB5B8830025CFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F781E92AB5B8830025CFD1 /* Main.storyboard */; };
 		48F781ED2AB5B8840025CFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F781EC2AB5B8840025CFD1 /* Assets.xcassets */; };
 		48F781F02AB5B8840025CFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F781EE2AB5B8840025CFD1 /* LaunchScreen.storyboard */; };
-		48F782022AB5D17A0025CFD1 /* build.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 48F782012AB5D17A0025CFD1 /* build.yaml */; };
-		48F782052AB5DE390025CFD1 /* Build-IPA.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 48F782032AB5DE390025CFD1 /* Build-IPA.yaml */; };
-		48F782062AB5DE390025CFD1 /* objective-c-xcode.yml in Resources */ = {isa = PBXBuildFile; fileRef = 48F782042AB5DE390025CFD1 /* objective-c-xcode.yml */; };
+		48F782082AB5E0F70025CFD1 /* build.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 48F782072AB5E0F70025CFD1 /* build.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +25,7 @@
 		48F781EC2AB5B8840025CFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F781EF2AB5B8840025CFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F781F12AB5B8840025CFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48F782012AB5D17A0025CFD1 /* build.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = build.yaml; sourceTree = "<group>"; };
-		48F782032AB5DE390025CFD1 /* Build-IPA.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "Build-IPA.yaml"; sourceTree = "<group>"; };
-		48F782042AB5DE390025CFD1 /* objective-c-xcode.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "objective-c-xcode.yml"; sourceTree = "<group>"; };
+		48F782072AB5E0F70025CFD1 /* build.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = build.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +81,7 @@
 		48F782002AB5D17A0025CFD1 /* workflows */ = {
 			isa = PBXGroup;
 			children = (
-				48F782012AB5D17A0025CFD1 /* build.yaml */,
-				48F782032AB5DE390025CFD1 /* Build-IPA.yaml */,
-				48F782042AB5DE390025CFD1 /* objective-c-xcode.yml */,
+				48F782072AB5E0F70025CFD1 /* build.yaml */,
 			);
 			path = workflows;
 			sourceTree = "<group>";
@@ -152,10 +146,8 @@
 			files = (
 				48F781F02AB5B8840025CFD1 /* LaunchScreen.storyboard in Resources */,
 				48F781ED2AB5B8840025CFD1 /* Assets.xcassets in Resources */,
-				48F782062AB5DE390025CFD1 /* objective-c-xcode.yml in Resources */,
-				48F782022AB5D17A0025CFD1 /* build.yaml in Resources */,
 				48F781EB2AB5B8830025CFD1 /* Main.storyboard in Resources */,
-				48F782052AB5DE390025CFD1 /* Build-IPA.yaml in Resources */,
+				48F782082AB5E0F70025CFD1 /* build.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

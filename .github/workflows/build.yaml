@@ -1,7 +1,6 @@
+
 name: App build
-on:
-    push:
-      branches: [ 'main', 'qa' , 'master','development', 'hotfix' ]
+on: push
 
 jobs:
   build_with_signing:
@@ -38,5 +37,4 @@ jobs:
           # apply provisioning profile
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
-
-
+      - name: Build app
