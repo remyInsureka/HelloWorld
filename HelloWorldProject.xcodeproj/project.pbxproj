@@ -13,6 +13,7 @@
 		48F781EB2AB5B8830025CFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F781E92AB5B8830025CFD1 /* Main.storyboard */; };
 		48F781ED2AB5B8840025CFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F781EC2AB5B8840025CFD1 /* Assets.xcassets */; };
 		48F781F02AB5B8840025CFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F781EE2AB5B8840025CFD1 /* LaunchScreen.storyboard */; };
+		48F782022AB5D17A0025CFD1 /* build.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 48F782012AB5D17A0025CFD1 /* build.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		48F781EC2AB5B8840025CFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48F781EF2AB5B8840025CFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F781F12AB5B8840025CFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F782012AB5D17A0025CFD1 /* build.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = build.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		48F781E22AB5B8830025CFD1 /* HelloWorldProject */ = {
 			isa = PBXGroup;
 			children = (
+				48F781FD2AB5CB460025CFD1 /* .github */,
 				48F781E32AB5B8830025CFD1 /* AppDelegate.swift */,
 				48F781E52AB5B8830025CFD1 /* SceneDelegate.swift */,
 				48F781E72AB5B8830025CFD1 /* ViewController.swift */,
@@ -65,6 +68,22 @@
 				48F781F12AB5B8840025CFD1 /* Info.plist */,
 			);
 			path = HelloWorldProject;
+			sourceTree = "<group>";
+		};
+		48F781FD2AB5CB460025CFD1 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				48F782002AB5D17A0025CFD1 /* workflows */,
+			);
+			path = .github;
+			sourceTree = SOURCE_ROOT;
+		};
+		48F782002AB5D17A0025CFD1 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				48F782012AB5D17A0025CFD1 /* build.yaml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +146,7 @@
 			files = (
 				48F781F02AB5B8840025CFD1 /* LaunchScreen.storyboard in Resources */,
 				48F781ED2AB5B8840025CFD1 /* Assets.xcassets in Resources */,
+				48F782022AB5D17A0025CFD1 /* build.yaml in Resources */,
 				48F781EB2AB5B8830025CFD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,9 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR7B5BHZCH;
+				DEVELOPMENT_TEAM = VWWX3TZ272;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.insureka.HelloWorldProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR7B5BHZCH;
+				DEVELOPMENT_TEAM = VWWX3TZ272;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -401,9 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR7B5BHZCH;
+				DEVELOPMENT_TEAM = VWWX3TZ272;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,6 +441,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.insureka.HelloWorldProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +509,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FR7B5BHZCH;
+				DEVELOPMENT_TEAM = VWWX3TZ272;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
