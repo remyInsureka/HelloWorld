@@ -1,22 +1,20 @@
 name: BUILD IPA
 on:
   push:
-    branches: ["main", "qa", "master", "development", "hotfix"]
-
+    branches: [“main”, “qa”, “master”, “development”, “hotfix”]
 jobs:
-  # This workflow contains a single job called "build"
+  # This workflow contains a single job called “build”
   build:
     # The type of runner that the job will run on
     runs-on: macos-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: yukiarrr/ios-build-action@v1.11.0
+      - uses: sparkfabrik/ios-build-action@v1.0.0
         with:
-        project-path: Unity-iPhone.xcodeproj
-        p12-base64: ${{ secrets.P12_BASE64 }}
-        mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
-        code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
-        team-id: ${{ secrets.TEAM_ID }}
-        workspace-path: Unity-iPhone.xcworkspace #
+          project-path: HelloWorldProject.xcodeproj
+          p12-base64: ${{ secrets.P12_BASE64 }}
+          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
+          code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
+          team-id: ${{ secrets.TEAM_ID }}
+          workspace-path: App.xcworkspace # optional
