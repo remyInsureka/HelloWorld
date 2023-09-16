@@ -9,9 +9,13 @@ jobs:
 
     steps:
       - name: BUILD
-        - uses: yukiarrr/ios-build-action@v1.11.0
-            with:
-              mobileprovision-base64: |
-                ${{ secrets.MY_MOBILEPROVISION_BASE64 }}
-                ${{ secrets.YOUR_MOBILEPROVISION_BASE64 }}
+      - uses: yukiarrr/ios-build-action@v1.11.0
+        with:
+            project-path: Unity-iPhone.xcodeproj
+            p12-key-base64: ${{ secrets.P12_KEY_BASE64 }}
+            p12-cer-base64: ${{ secrets.P12_CER_BASE64 }}
+            mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
+            code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
+            team-id: ${{ secrets.TEAM_ID }}
+            # workspace-path: Unity-iPhone.xcworkspace # optional
                   
