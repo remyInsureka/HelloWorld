@@ -1,6 +1,6 @@
 name: App build
 on:
-    push
+    push:
       branches: [ 'main', 'qa' , 'master','development', 'hotfix' ]
 
 jobs:
