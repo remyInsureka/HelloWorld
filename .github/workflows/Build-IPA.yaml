@@ -4,8 +4,8 @@ on:
       branches: [ 'main', 'qa' , 'master','development', 'hotfix' ]
 
 jobs:
-   - uses: yukiarrr/ios-build-action@v1.11.0
-     with:
+    - uses: yukiarrr/ios-build-action@v1.11.0
+      with:
         project-path: Unity-iPhone.xcodeproj
         p12-base64: ${{ secrets.P12_BASE64 }}
         mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
