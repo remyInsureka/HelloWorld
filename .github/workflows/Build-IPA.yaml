@@ -1,5 +1,17 @@
-- uses: yukiarrr/ios-build-action@v1.11.0
-  with:
-    mobileprovision-base64: |
-      ${{ secrets.MY_MOBILEPROVISION_BASE64 }}
-      ${{ secrets.YOUR_MOBILEPROVISION_BASE64 }}
+name: BUILD IPA
+on:
+    push:
+      branches: [ 'main', 'qa' , 'master','development', 'hotfix' ]
+
+jobs:
+  build_with_signing:
+    runs-on: macos-latest
+
+    steps:
+      - name: BUILD
+        - uses: yukiarrr/ios-build-action@v1.11.0
+        with:
+          mobileprovision-base64: |
+            ${{ secrets.MY_MOBILEPROVISION_BASE64 }}
+            ${{ secrets.YOUR_MOBILEPROVISION_BASE64 }}
+              
